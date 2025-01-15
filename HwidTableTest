@@ -1,0 +1,14 @@
+return {
+    ["Hwid1"] = {
+        CreatedTime = true,
+        Time = true,
+    },
+    ["Hwid2"] = {
+        CreatedTime = true,
+        Time = true,
+    },
+    ["Hwid3"] = {
+        CreatedTime = true,
+        Time = true,
+    },
+}
