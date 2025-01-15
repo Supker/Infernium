@@ -1,7 +1,7 @@
 return {
     ["Hwid1"] = {
         CreatedTime = true,
-        Time = false,
+        Time = true,
     },
     ["Hwid2"] = {
         CreatedTime = true,
