@@ -1,0 +1,30 @@
+return function
+    function toClipboard(String)
+        local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
+        if clipBoard then
+            clipBoard(String)
+        else
+            print('Clipboard:',"Your exploit doesn't have the ability to use the clipboard")
+        end
+    end
+
+    print("Executed Premium!")
+
+    local fetch = loadstring(game:HttpGet("https://pastefy.app/2qCJNN8F/raw"))()
+    HWIDTable = fetch or fetch()
+    if not HWIDTable then game.Players.LocalPlayer:Kick("Something Wrong With Data-Base, please create ticket in our discord gg/inferniumhub server for help.") return end
+    userHwid = game:GetService("RbxAnalyticsService"):GetClientId()
+
+    for _, verifiedHWID in pairs(HWIDTable) do 
+        if userHwid == verifiedHWID then
+            _G.Passed = true
+            break
+        end    
+    end
+
+    if not _G.Passed then 
+        toClipboard(userHwid)
+        game.Players.LocalPlayer:Kick("It looks like you are logged in using a different device. Your HWID has been copied to clipboard, visit gg/inferniumhub so that we can add it.")
+        return
+    end
+end
