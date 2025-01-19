@@ -1,4 +1,5 @@
 return function
+    print(11111111111111)
     function toClipboard(String)
         local clipBoard = setclipboard or toclipboard or set_clipboard or (Clipboard and Clipboard.set)
         if clipBoard then
